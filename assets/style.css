@@ -1,5 +1,8 @@
 body {
-  background-color: darkred;
+  background-color: rgba(185, 20, 80, 1);
+}
+.dati_passegero h4 {
+  color: rgba(185, 20, 80, 1);
 }
 h2 {
   text-transform: uppercase;
@@ -8,6 +11,19 @@ h2 {
 }
 .container {
   margin: auto;
+}
+input,
+select {
+  border: 1px solid rgba(185, 20, 80, 1);
+}
+#genera,
+#annulla {
+  background-color: lightgrey;
+  color: rgba(185, 20, 80, 1);
+  border: 1px solid rgba(185, 20, 80, 1);
+  border-radius: 8px;
+  font-weight: bolder;
+  padding: 5px;
 }
 .bg-grey {
   background-color: grey;

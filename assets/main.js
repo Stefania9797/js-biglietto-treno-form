@@ -47,9 +47,14 @@ btnGenera.addEventListener("click" , function(){
     //click su annulla
     var btnAnnulla = document.getElementById("annulla");
     btnAnnulla.addEventListener("click" , function(){
+        //dati biglietto
         document.getElementById("carrozza").innerHTML = "";
         document.getElementById("codice").innerHTML = "";
         document.getElementById("dato_nome_utente").innerHTML = "";
         document.getElementById("offerta").innerHTML = "";
         document.getElementById("costo").innerHTML = "";
+        //dati utente
+        document.getElementById("nome").value = "";
+        document.getElementById("distanza").value = "";
+        document.getElementById("età").value = "";
     })
