@@ -10,15 +10,20 @@ var btnGenera = document.getElementById("genera");
 btnGenera.addEventListener("click" , function(){
     //"il tuo biglietto" appare al click su genera
     document.getElementById("bottom-div").classList.add("d-block");
-        //"valori" del form
-        var nomePassegero = document.getElementById("nome").value;
-        var distanza = document.getElementById("distanza").value;
+    //"valori" del form
+    var nomePassegero = document.getElementById("nome").value;
+    var distanza = document.getElementById("distanza").value;
         var età = document.getElementById("età").value;
+        //se l'utente non compila tutti i campi il biglietto non viene generato
+        if(nomePassegero==""||distanza==""){
+            alert("Inserisci tutti i dati richiesti!")
+            document.getElementById("bottom-div").classList.remove("d-block");
+        }
         //calcolo prezzo
         var prezzo = Math.floor(distanza * 0.21);
         var sconto;
         var tipoOfferta;
-
+        
         // calcolo sconto per età
         if (età == "minorenne") {
             sconto = (prezzo * 0.2).toFixed(2); 
