@@ -9,14 +9,11 @@
 var btnGenera = document.getElementById("genera");
 btnGenera.addEventListener("click" , function(){
     var nomePassegero = document.getElementById("nome").value;
-        console.log("Nome del passeggero:", nomePassegero);
-
+        nomePassegero.innerHTML="nome"
         var distanza = document.getElementById("distanza").value;
-        console.log("Km da percorrere:", distanza);
 
         var età = document.getElementById("età").value;
-        console.log("Età:", età);
-
+        //calcolo prezzo
         var prezzo = Math.floor(distanza * 0.21);
         var sconto;
         var tipoOfferta;
@@ -33,5 +30,17 @@ btnGenera.addEventListener("click" , function(){
             tipoOfferta = "Nessuna offerta";
         }
         var prezzoFinale=(prezzo - sconto).toFixed(2);
-        console.log(prezzoFinale);
-})
+        //carrozza
+        var carrozza = Math.floor(Math.random() * 10) + 1;
+        //codice cp
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min) ) + min;
+        }
+        var codice = randomNumber(90000, 100000)
+        //generazione dati sulla pagina
+        document.getElementById("carrozza").innerHTML = carrozza;
+        document.getElementById("codice").innerHTML = codice;
+        document.getElementById("dato_nome_utente").innerHTML = nomePassegero;
+        document.getElementById("offerta").innerHTML = tipoOfferta;
+        document.getElementById("costo").innerHTML = prezzoFinale + "€";
+    })
