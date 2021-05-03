@@ -1,0 +1,22 @@
+body {
+  background-color: darkred;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+.container {
+  margin: auto;
+}
+.bg-grey {
+  background-color: grey;
+}
+.il_tuo_biglietto .d-flex {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.il_tuo_biglietto span {
+  display: inline-block;
+  margin-top: 20px;
+}
