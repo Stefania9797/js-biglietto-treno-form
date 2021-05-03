@@ -20,16 +20,16 @@ btnGenera.addEventListener("click" , function(){
             document.getElementById("bottom-div").classList.remove("d-block");
         }
         //calcolo prezzo
-        var prezzo = Math.floor(distanza * 0.21);
+        var prezzo = (distanza * 0.21);
         var sconto;
         var tipoOfferta;
         
         // calcolo sconto per età
         if (età == "minorenne") {
-            sconto = (prezzo * 0.2).toFixed(2); 
+            sconto = (prezzo * 0.2); 
             tipoOfferta = "Offerta Minorenni";
         } else if (età =="over65") {
-            sconto = (prezzo * 0.4).toFixed(2);
+            sconto = (prezzo * 0.4);
             tipoOfferta = "Offerta Over 65";
         } else {
             sconto = 0;
