@@ -1,5 +1,9 @@
+/* Utilities */
 body {
   background-color: rgba(185, 20, 80, 1);
+}
+.bg-grey {
+  background-color: grey;
 }
 .dati_passegero h4 {
   color: rgba(185, 20, 80, 1);
@@ -12,10 +16,12 @@ h2 {
 .container {
   margin: auto;
 }
+/* Stile form */
 input,
 select {
   border: 1px solid rgba(185, 20, 80, 1);
 }
+/* Stile bottoni */
 #genera,
 #annulla {
   background-color: lightgrey;
@@ -25,9 +31,7 @@ select {
   font-weight: bolder;
   padding: 5px;
 }
-.bg-grey {
-  background-color: grey;
-}
+/* Il tuo biglietto */
 .il_tuo_biglietto .d-flex {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -35,4 +39,7 @@ select {
 .il_tuo_biglietto span {
   display: inline-block;
   margin-top: 20px;
+}
+#bottom-div {
+  display: none;
 }

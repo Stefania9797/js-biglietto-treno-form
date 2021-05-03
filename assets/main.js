@@ -8,10 +8,11 @@
 //Quando l'utente clicca su genera
 var btnGenera = document.getElementById("genera");
 btnGenera.addEventListener("click" , function(){
-    var nomePassegero = document.getElementById("nome").value;
-        nomePassegero.innerHTML="nome"
+    //"il tuo biglietto" appare al click su genera
+    document.getElementById("bottom-div").classList.add("d-block");
+        //"valori" del form
+        var nomePassegero = document.getElementById("nome").value;
         var distanza = document.getElementById("distanza").value;
-
         var età = document.getElementById("età").value;
         //calcolo prezzo
         var prezzo = Math.floor(distanza * 0.21);
