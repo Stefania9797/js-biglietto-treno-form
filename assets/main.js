@@ -13,7 +13,7 @@ btnGenera.addEventListener("click" , function(){
     //"valori" del form
     var nomePassegero = document.getElementById("nome").value;
     var distanza = document.getElementById("distanza").value;
-        var età = document.getElementById("età").value;
+    var età = document.getElementById("età").value;
         //se l'utente non compila tutti i campi il biglietto non viene generato
         if(nomePassegero==""||distanza==""){
             alert("Inserisci tutti i dati richiesti!")
