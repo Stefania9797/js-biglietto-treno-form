@@ -22,6 +22,11 @@ select {
   border: 1px solid rgba(185, 20, 80, 1);
 }
 /* Stile bottoni */
+#genera:hover,
+#annulla:hover {
+  color: lightgray;
+  background-color: rgba(185, 20, 80, 1);
+}
 #genera,
 #annulla {
   background-color: lightgrey;
@@ -30,6 +35,7 @@ select {
   border-radius: 8px;
   font-weight: bolder;
   padding: 5px;
+  transition: all 0.5s linear;
 }
 /* Il tuo biglietto */
 .il_tuo_biglietto .d-flex {
