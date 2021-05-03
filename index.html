@@ -16,20 +16,24 @@
                 <div class="dati_passegero justify-content-around d-flex">
                     <div class="nome_cognome">
                         <h4>Nome e cognome</h4>
-                        <input type="text">
+                        <input id="nome" type="text">
                     </div>
                     <div class="kilometri">
                         <h4>Km da percorrere</h4>
-                        <input type="text">
+                        <input id="kilometri" type="text">
                     </div>
                     <div class="fascia_età">
                         <h4>Fascia d'età</h4>
-                        <input type="text">
+                        <select id="select_età" class="" name="">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                        </select>
                     </div>
                 </div>
                 <div class="bottoni text-center mt-5 pb-5">
-                    <button type="button" class="mr-4 btn btn-primary">Genera</button>
-                    <button type="button" class="btn btn-primary">Annulla</button>
+                    <button id="genera" type="button" class="mr-4 btn btn-primary">Genera</button>
+                    <button id="annulla" type="button" class="btn btn-primary">Annulla</button>
                 </div>
             </div>
             <h2>Il tuo biglietto</h2>
@@ -44,19 +48,19 @@
                             </div>
                             <div class="offerta p-4">
                                 <h5>Offerta</h5>
-                                <span>offerta</span>
+                                <span id="offerta">offerta</span>
                             </div>
                             <div class="carrozza p-4">
                                 <h5>Carrozza</h5>
-                                <span>carrozza</span>
+                                <span id="carrozza">carrozza</span>
                             </div>
                             <div class="codice_cp p-4">
                                 <h5>Codice CP</h5>
-                                <span>codice</span>
+                                <span id="codice">codice</span>
                             </div>
                             <div class="prezzo p-4">
                                 <h5>Costo biglietto</h5>
-                                <span>costo</span>
+                                <span id="costo">costo</span>
                             </div>
                         </div>
                     </div>
